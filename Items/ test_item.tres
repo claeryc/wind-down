@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EquippableItem" load_steps=3 format=3 uid="uid://cwv4rorvgx8al"]
+
+[ext_resource type="Script" uid="uid://b2o8l4sc8hs5c" path="res://Items/equippable_item.gd" id="1_tgb82"]
+[ext_resource type="Texture2D" uid="uid://cjhkkg8xplemm" path="res://assets/sprites/items/Tool/Axe.png" id="2_n65an"]
+
+[resource]
+script = ExtResource("1_tgb82")
+texture = ExtResource("2_n65an")
+display_name = "axe"
+metadata/_custom_type_script = "uid://b2o8l4sc8hs5c"

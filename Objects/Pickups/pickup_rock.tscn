@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://dcowfmkrfl6cq"]
+
+[ext_resource type="Script" uid="uid://d1fgg47pjqfnk" path="res://Objects/Pickups/pickup_rock.gd" id="1_7idys"]
+[ext_resource type="Texture2D" uid="uid://dkshaumcou0ox" path="res://assets/sprites/items/Resource/Rock.png" id="2_7idys"]
+[ext_resource type="Resource" uid="uid://ccep746wirxxq" path="res://Items/Resources/r_iron_ore.tres" id="2_hft54"]
+[ext_resource type="AudioStream" uid="uid://b11kdyehmpcne" path="res://assets/sounds/Hit & Impact/Impact.wav" id="4_k0q11"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hft54"]
+radius = 5.09902
+
+[node name="Pickup_Rock" type="Area2D"]
+z_index = -1
+script = ExtResource("1_7idys")
+resource_type = ExtResource("2_hft54")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 4.76837e-07)
+scale = Vector2(0.486875, 0.48197)
+texture = ExtResource("2_7idys")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hft54")
+one_way_collision_margin = 0.0
+
+[node name="HarvestSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_k0q11")
+volume_db = -14.667

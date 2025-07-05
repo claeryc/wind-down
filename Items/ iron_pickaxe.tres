@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="HarvestingTool" load_steps=5 format=3 uid="uid://b77nd3r4f0xxe"]
+
+[ext_resource type="Script" uid="uid://b5gacy3amfhho" path="res://Objects/Resources/Types/resource_ node_type.gd" id="1_14dor"]
+[ext_resource type="Script" uid="uid://c68ppri5e65gy" path="res://Items/HarvestingTool.gd" id="1_hn5co"]
+[ext_resource type="Resource" uid="uid://brcaien6ep7yo" path="res://Objects/Resources/Types/ ore_node.tres" id="2_1sv2g"]
+[ext_resource type="Texture2D" uid="uid://ddlbcrev2hhjx" path="res://assets/sprites/items/Tool/Pickaxe.png" id="2_4uiec"]
+
+[resource]
+script = ExtResource("1_hn5co")
+effected_types = Array[ExtResource("1_14dor")]([ExtResource("2_1sv2g")])
+min_amount = 1
+max_amount = 1
+texture = ExtResource("2_4uiec")
+display_name = "Iron Pickaxe"
+metadata/_custom_type_script = "uid://c68ppri5e65gy"

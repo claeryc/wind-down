@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ResourceNodeType" load_steps=2 format=3 uid="uid://brcaien6ep7yo"]
+
+[ext_resource type="Script" uid="uid://b5gacy3amfhho" path="res://Objects/Resources/Types/resource_ node_type.gd" id="1_532dl"]
+
+[resource]
+script = ExtResource("1_532dl")
+display_name = "ore_node"
+metadata/_custom_type_script = "uid://b5gacy3amfhho"

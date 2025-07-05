@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4i27vwt51t7a"]
+
+[ext_resource type="Script" uid="uid://dl6bnfo4kw861" path="res://UI/resource_item_display.gd" id="1_8hy40"]
+[ext_resource type="Texture2D" uid="uid://dkshaumcou0ox" path="res://assets/sprites/items/Resource/Rock.png" id="2_lcxsc"]
+
+[node name="ResourceItemDisplay" type="HBoxContainer"]
+script = ExtResource("1_8hy40")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_lcxsc")
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "0"

@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://cv6iujb36t3w"]
+
+[ext_resource type="Script" uid="uid://d1fgg47pjqfnk" path="res://Objects/Pickups/pickup_rock.gd" id="1_s6y7r"]
+[ext_resource type="Resource" uid="uid://1uttqcncf6w1" path="res://Items/Resources/r_branch.tres" id="2_s6y7r"]
+[ext_resource type="Texture2D" uid="uid://bjisfvbly170s" path="res://assets/sprites/items/Resource/Branch.png" id="3_s6y7r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hft54"]
+radius = 5.09902
+
+[node name="Pickup_Branch" type="Area2D"]
+z_index = -1
+script = ExtResource("1_s6y7r")
+resource_type = ExtResource("2_s6y7r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 4.76837e-07)
+scale = Vector2(0.486875, 0.48197)
+texture = ExtResource("3_s6y7r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hft54")
+one_way_collision_margin = 0.0

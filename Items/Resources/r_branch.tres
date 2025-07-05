@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ResourceItem" load_steps=3 format=3 uid="uid://1uttqcncf6w1"]
+
+[ext_resource type="Script" uid="uid://ug4jj6uctb4a" path="res://Items/Resources/resource_item.gd" id="1_u2tkk"]
+[ext_resource type="Texture2D" uid="uid://bjisfvbly170s" path="res://assets/sprites/items/Resource/Branch.png" id="2_e5tsp"]
+
+[resource]
+resource_name = "Branch"
+script = ExtResource("1_u2tkk")
+display_name = "Branch"
+texture = ExtResource("2_e5tsp")
+metadata/_custom_type_script = "uid://ug4jj6uctb4a"

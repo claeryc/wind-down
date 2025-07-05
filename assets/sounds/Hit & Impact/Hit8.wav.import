@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cygp0or3i0v6o"
+path="res://.godot/imported/Hit8.wav-25a024fd6fbf0a52d0aff4be2ff3163c.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Hit & Impact/Hit8.wav"
+dest_files=["res://.godot/imported/Hit8.wav-25a024fd6fbf0a52d0aff4be2ff3163c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
