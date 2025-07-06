@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="HarvestingTool" load_steps=5 format=3 uid="uid://d00ol4mjksrjm"]
+
+[ext_resource type="Script" uid="uid://b5gacy3amfhho" path="res://Objects/Resources/Types/resource_ node_type.gd" id="1_c6gxu"]
+[ext_resource type="Resource" uid="uid://rvmmrchctopf" path="res://Objects/Resources/Types/ wood_node.tres" id="2_c6gxu"]
+[ext_resource type="Script" uid="uid://c68ppri5e65gy" path="res://Items/HarvestingTool.gd" id="3_8ubs2"]
+[ext_resource type="Texture2D" uid="uid://cjhkkg8xplemm" path="res://assets/sprites/items/Tool/Axe.png" id="4_lmiks"]
+
+[resource]
+script = ExtResource("3_8ubs2")
+effected_types = Array[ExtResource("1_c6gxu")]([ExtResource("2_c6gxu")])
+min_amount = 1
+max_amount = 1
+texture = ExtResource("4_lmiks")
+display_name = "Iron Axe"
+metadata/_custom_type_script = "uid://c68ppri5e65gy"

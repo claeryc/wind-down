@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0tccjsdnjlvu"]
+
+[ext_resource type="Script" uid="uid://dykn37tluujv5" path="res://UI/ItemButton.gd" id="1_7f54p"]
+
+[node name="Item Button" type="Button"]
+script = ExtResource("1_7f54p")

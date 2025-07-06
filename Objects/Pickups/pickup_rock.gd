@@ -35,7 +35,7 @@ func launch(velocity : Vector2, duration : float):
 	move_duration = duration
 	time_since_launch = 0
 	launching = true
-	$HarvestSound.play() # <- play sound
+	#$HarvestSound.play() # <- play sound
 	print("True")
 	
 func _on_body_entered(body : Node2D):

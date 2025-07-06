@@ -5,6 +5,7 @@ class_name ResourceNode
 @export var node_types  : Array[ResourceNodeType]
 @export var starting_resources : int = 1
 @export var pickup_type : PackedScene
+@export var depleted_effect : PackedScene
 @export var launch_speed : float = 100
 @export var launch_duration : float = 0.25
 
@@ -16,6 +17,11 @@ var current_resources : int :
 		# ANIMATION 
 
 		if(resource_count <= 0):
+			# spawn particle effect
+			var effect_instance : GPUParticles2D = depleted_effect.instantiate()
+			effect_instance.position = position
+			level_parent.add_child(effect_instance)
+			effect_instance.emitting = true 
 			queue_free()
 
 func _ready():

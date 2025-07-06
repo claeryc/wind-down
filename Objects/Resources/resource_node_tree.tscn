@@ -1,0 +1,37 @@
+[gd_scene load_steps=9 format=3 uid="uid://di3t0uubdleyf"]
+
+[ext_resource type="Script" uid="uid://cplykeqsygrps" path="res://Objects/Resources/resource_node.gd" id="1_teafb"]
+[ext_resource type="Script" uid="uid://b5gacy3amfhho" path="res://Objects/Resources/Types/resource_ node_type.gd" id="2_ouxgx"]
+[ext_resource type="Resource" uid="uid://rvmmrchctopf" path="res://Objects/Resources/Types/ wood_node.tres" id="3_teafb"]
+[ext_resource type="PackedScene" uid="uid://cv6iujb36t3w" path="res://Objects/Pickups/pickup_branch.tscn" id="4_ouxgx"]
+[ext_resource type="Texture2D" uid="uid://cd5n8amhh6oki" path="res://assets_pc/sprites/Environment/Props/Static/Trees/Model_02/Size_03.png" id="5_36tfj"]
+[ext_resource type="PackedScene" uid="uid://c5p6kj0wvyhxp" path="res://Effects/depleted_resource_explosion.tscn" id="5_ouxgx"]
+[ext_resource type="AudioStream" uid="uid://b11kdyehmpcne" path="res://assets/sounds/Hit & Impact/Impact.wav" id="6_pnls4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6lpd6"]
+size = Vector2(99.0698, 54.5025)
+
+[node name="ResourceNode_Tree" type="StaticBody2D"]
+y_sort_enabled = true
+scale = Vector2(0.134375, 0.153125)
+script = ExtResource("1_teafb")
+node_types = Array[ExtResource("2_ouxgx")]([ExtResource("3_teafb")])
+starting_resources = 5
+pickup_type = ExtResource("4_ouxgx")
+depleted_effect = ExtResource("5_ouxgx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -52.2449)
+scale = Vector2(3.60917, 2.65816)
+texture = ExtResource("5_36tfj")
+hframes = 3
+vframes = 2
+frame = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.55814, 26.1224)
+shape = SubResource("RectangleShape2D_6lpd6")
+
+[node name="HarvestSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_pnls4")
+volume_db = -15.333

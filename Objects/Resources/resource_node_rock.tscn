@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://duyi3ss0q6t6g"]
+[gd_scene load_steps=9 format=3 uid="uid://duyi3ss0q6t6g"]
 
 [ext_resource type="Script" uid="uid://cplykeqsygrps" path="res://Objects/Resources/resource_node.gd" id="1_4f7hw"]
 [ext_resource type="Texture2D" uid="uid://dmvwctmfpym7v" path="res://assets_pc/sprites/Environment/Props/Static/Rock Pile.png" id="1_6lpd6"]
 [ext_resource type="Script" uid="uid://b5gacy3amfhho" path="res://Objects/Resources/Types/resource_ node_type.gd" id="2_2ywfp"]
 [ext_resource type="Resource" uid="uid://brcaien6ep7yo" path="res://Objects/Resources/Types/ ore_node.tres" id="2_xbnju"]
 [ext_resource type="PackedScene" uid="uid://dcowfmkrfl6cq" path="res://Objects/Pickups/pickup_rock.tscn" id="4_x0uds"]
+[ext_resource type="PackedScene" uid="uid://c5p6kj0wvyhxp" path="res://Effects/depleted_resource_explosion.tscn" id="5_6jpu8"]
 [ext_resource type="AudioStream" uid="uid://b11kdyehmpcne" path="res://assets/sounds/Hit & Impact/Impact.wav" id="6_5id0j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6lpd6"]
@@ -17,6 +18,7 @@ script = ExtResource("1_4f7hw")
 node_types = Array[ExtResource("2_2ywfp")]([ExtResource("2_xbnju")])
 starting_resources = 5
 pickup_type = ExtResource("4_x0uds")
+depleted_effect = ExtResource("5_6jpu8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 32.6531)
